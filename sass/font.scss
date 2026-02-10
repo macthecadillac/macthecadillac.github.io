@@ -3,8 +3,8 @@
 @use "open-sans.scss";
 
 :root {
-    --font-nav-bar: "Inter Tight";
-    --font-headings: "Lato";
+    --font-nav-bar: "Inter Tight", var(--font-system-ui);
+    --font-headings: "Lato", var(--font-system-ui);
     --font-size-xx-small: 0.46875rem;
     --font-size-x-small: 0.5625rem;
     --font-size-small: 0.65625rem;
@@ -16,9 +16,9 @@
 }
 
 body {
-    font-family: "Open Sans", var(--font-emoji);
+    font-family: "Open Sans", var(--font-system-ui), var(--font-emoji);
     font-size: var(--font-size-large);
-    font-weight: 370;
+    font-weight: 375;
 }
 
 // HEADINGS
