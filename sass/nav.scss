@@ -100,6 +100,18 @@
     max-width: min(var(--container-width) + 15rem, 100% - 1rem);
 }
 
+#site-nav {
+  #search-results-container {
+    background-color: var(--search-bg);
+  }
+
+  #search-results {
+    .item {
+      background-color: transparent;
+    }
+  }
+}
+
 #site-nav nav {
     display: flex;
     justify-content: space-between;
@@ -204,6 +216,7 @@
         }
     }
 }
+
 @media screen and (min-width: 45.01rem) {
     #site-nav nav {
         .hamburger {
