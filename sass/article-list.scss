@@ -1,5 +1,8 @@
 #article-list {
-    article {
-        --bg-overlay: --bg-color;
+  article {
+    --bg-overlay: --bg-color;
+    h3 {
+      font-weight: 400;
     }
+  }
 }
