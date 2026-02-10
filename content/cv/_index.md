@@ -1,6 +1,8 @@
 +++
 title = "Curriculum Vitae"
 draft = false
+[extra]
+go_to_top = true
 +++
 
 ## Education
