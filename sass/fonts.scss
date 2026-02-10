@@ -1,6 +1,22 @@
 :root {
     // --font-system-ui: system-ui, sans-serif;
-    --font-system-ui: "Lato", sans-serif;
+    --font-system-ui: "Lato";
+}
+
+@font-face {
+	font-style: normal;
+	font-weight: 100 900;
+	src: url("fonts/InterVariable.woff2") format("woff2");
+	font-family: "Inter Variable";
+	font-display: swap;
+}
+
+@font-face {
+	font-style: italic;
+	font-weight: 100 900;
+	src: url("fonts/InterVariable-Italic.woff2") format("woff2");
+	font-family: "Inter Variable";
+	font-display: swap;
 }
 
 @font-face {
@@ -62,7 +78,7 @@
 @font-face {
     font-style: italic;
     font-weight: 400 500;
-    src: url("fonts/Lato-RegularItalic.woff") format("woff");
+    src: url("fonts/Lato-Italic.woff") format("woff");
     font-family: "Lato";
     font-display: swap;
 }
@@ -84,8 +100,10 @@
 }
 
 body {
-    font-family: "Lato", var(--font-system-ui), var(--font-emoji);
-    font-weight: 300;
+    font-family: "Inter Variable", var(--font-emoji);
+    // font-family: "Inter Variable", var(--font-system-ui), var(--font-emoji);
+    // font-family: var(--font-system-ui), var(--font-emoji);
+    font-weight: 350;
 }
 
 // HEADINGS
@@ -102,7 +120,7 @@ h6 {
 h1,
 h2,
 h3 {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h4,
