@@ -62,12 +62,14 @@
 #site-nav {
     nav a,
     summary {
-        font-weight: 400;
+        font-weight: 350;
+        font-family: "Inter Tight";
         font-size: 1.1rem;
     }
 
     nav #home a {
-        font-weight: 400;
+        font-weight: 350;
+        font-family: "Inter Tight";
         font-size: 1.2rem;
         .icon {
             display: none;
