@@ -63,14 +63,14 @@
     nav a,
     summary {
         font-weight: 350;
-        font-family: "Inter Tight";
-        font-size: 1.1rem;
+        font-family: var(--nav-bar-font);
+        font-size: 1.15rem;
     }
 
     nav #home a {
         font-weight: 350;
-        font-family: "Inter Tight";
-        font-size: 1.2rem;
+        font-family: var(--nav-bar-font);
+        font-size: 1.25rem;
         .icon {
             display: none;
         }
