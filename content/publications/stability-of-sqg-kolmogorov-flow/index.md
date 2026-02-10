@@ -4,6 +4,8 @@ description = 'M. Lee and S. G. Llewellyn Smith, Stability of SQG Kolmogorov Flo
 date = 2026-01-26
 [taxonomies]
 tags = ["stability", "SQG", "submesoscale"]
+[extra]
+banner = "banner.webp"
 +++
 
 <!-- [extra] -->

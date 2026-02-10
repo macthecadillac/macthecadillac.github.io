@@ -4,10 +4,9 @@ description = 'M. Lee and S. G. Llewellyn Smith, "SQG point vortex dynamics with
 date = 2026-01-13
 [taxonomies]
 tags = ["SQG", "point vortex", "submesoscale"]
+[extra]
+banner = "banner.webp"
 +++
-
-<!-- [extra] -->
-<!-- banner = "banner.webp" -->
 
 Quasi-geostrophic flow is an asymptotic theory for flows in rotating systems
 that are in geostrophic balance to leading order. It is characterised by the
