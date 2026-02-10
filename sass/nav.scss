@@ -63,13 +63,13 @@
     nav a,
     summary {
         font-weight: 350;
-        font-family: var(--nav-bar-font);
+        font-family: var(--font-nav-bar);
         font-size: 1.15rem;
     }
 
     nav #home a {
         font-weight: 350;
-        font-family: var(--nav-bar-font);
+        font-family: var(--font-nav-bar);
         font-size: 1.25rem;
         .icon {
             display: none;
