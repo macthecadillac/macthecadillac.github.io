@@ -68,9 +68,9 @@ accent_color_dark = "#6798C5"
 # emoji_favicon = "🦆🪶"
 #
 # URL to website's issue tracker
-issues_url = "https://codeberg.org/daudix/duckquill/issues"
+# issues_url = "https://codeberg.org/daudix/duckquill/issues"
 # URL to website's source code
-source_url = "https://github.com/macthecadillac/macthecadillac.github.io"
+# source_url = "https://github.com/macthecadillac/macthecadillac.github.io"
 # Additional CSS styles; expects them to be in the "./static/" directory.
 # If you are using Sass it will be generated there automatically.
 #
@@ -94,7 +94,7 @@ show_reading_time = true
 #
 # Whether to show a share button in article's quick actions.
 # Uses https://shareopenly.org.
-show_share_button = true
+show_share_button = false
 # Whether to show the backlinks button for linked articles in the article's quick actions
 show_backlinks = true
 # Whether to enable the KaTeX library for rendering LaTeX.
