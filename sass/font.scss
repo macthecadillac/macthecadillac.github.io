@@ -5,19 +5,19 @@
 :root {
     --font-nav-bar: "Inter Tight", var(--font-system-ui);
     --font-headings: "Lato", var(--font-system-ui);
-    --font-size-xx-small: 0.46875rem;
-    --font-size-x-small: 0.5625rem;
-    --font-size-small: 0.65625rem;
-    --font-size-medium: 0.75rem;
-    --font-size-large: 0.9375rem;
-    --font-size-x-large: 1.125rem;
-    --font-size-xx-large: 1.5rem;
-    --font-size-xxx-large: 2rem;
+    --font-size-xx-small: 0.5rem;
+    --font-size-x-small: 0.625rem;
+    --font-size-small: 0.75rem;
+    --font-size-medium: 0.9375rem;
+    --font-size-large: 1rem;
+    --font-size-x-large: 1.25rem;
+    --font-size-xx-large: 1.6rem;
+    --font-size-xxx-large: 2.15rem;
 }
 
 body {
     font-family: "Open Sans", var(--font-system-ui), var(--font-emoji);
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-medium);
     font-weight: 375;
 }
 
