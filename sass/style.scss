@@ -1,4 +1,5 @@
 @use "../themes/duckquill/sass/style.scss";
+@use "../themes/duckquill/sass/fonts.scss";
 @use "../themes/duckquill/sass/mods/_classic-nav.scss";
 @use "../themes/duckquill/sass/mods/classic-article-list";
 @use "../themes/duckquill/sass/mods/_no-edge-highlight.scss";
@@ -7,7 +8,7 @@
 @use "nav.scss";
 @use "fluid.scss";
 @use "theme-switcher.scss";
-@use "fonts.scss";
+@use "font.scss";
 @use "posts.scss";
 @use "article-list.scss";
 @use "general.scss";
