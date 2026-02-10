@@ -1,6 +1,6 @@
 +++
 title = "SQG point vortex dynamics with order Rossby corrections"
-description = 'M. Lee and S. G. Llewellyn Smith, "SQG point vortex dynamics with order Rossby corrections", [European Journal of Mechanics - B/Fluids 118, 204467 (2026)](https://doi.org/10.1016/j.euromechflu.2026.204467).'
+description = 'M. Lee and S. G. Llewellyn Smith, "SQG point vortex dynamics with order Rossby corrections", [Eur. J. Mech. B Fluids 118, 204467 (2026)](https://doi.org/10.1016/j.euromechflu.2026.204467).'
 date = 2026-01-13
 [taxonomies]
 tags = ["SQG", "point vortex", "submesoscale"]
@@ -26,4 +26,4 @@ numerically, in particular their vertical excursions, which are non-zero because
 of ageostrophic effects. Surface trajectories can manifest local horizontal
 divergence even though the underlying fluid equations are incompressible.
 
-Recommended citation: M. Lee and S. G. Llewellyn Smith, "SQG point vortex dynamics with order Rossby corrections", [European Journal of Mechanics - B/Fluids 118, 204467 (2026)](https://doi.org/10.1016/j.euromechflu.2026.204467).
+Recommended citation: M. Lee and S. G. Llewellyn Smith, "SQG point vortex dynamics with order Rossby corrections", [Eur. J. Mech. B Fluids 118, 204467 (2026)](https://doi.org/10.1016/j.euromechflu.2026.204467).
