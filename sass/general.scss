@@ -1,0 +1,58 @@
+:root {
+    --shadow-glass: 0 0 0.2rem 0.01rem rgb(0 0 0 / 0.2);
+    --active: none;
+    /* --transition: 0s; */
+}
+
+[data-theme="dark"] {
+    --bg-color: #242424;
+    --glass-bg: rgba(36, 36, 36, 0.6);
+}
+
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+        --bg-color: white;
+        --glass-bg: rgba(255, 255, 255, 0.6);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --bg-color: #242424;
+        --glass-bg: rgba(36, 36, 36, 0.6);
+    }
+}
+
+[data-theme="light"] {
+    --bg-color: white;
+    --glass-bg: rgba(255, 255, 255, 0.6);
+}
+
+/* Disable zoom on hover for images */
+img:not(
+    .no-hover,
+    .full-bleed,
+    [src*="#no-hover"],
+    [src*="#full-bleed"],
+    .emoji
+) {
+    cursor: default;
+
+    &:hover {
+        transform: none;
+    }
+
+    &.start,
+    &.end,
+    &[src*="#start"],
+    &[src*="#end"] {
+        &:hover {
+            transform: none;
+        }
+    }
+}
+
+/* Ensure videos do not zoom on hover */
+video:hover {
+    transform: none;
+}

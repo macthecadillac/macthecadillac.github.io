@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="home-wrapper">
+  <div class="home-sidebar">
+    <div class="profile-container">
+      <img src="{{ get_url(path="profile.webp") }}" alt="Profile" class="profile-pic static-img">
+    </div>
+  </div>
+
+  <main class="home-intro">
+    <section class="intro-content">
+      {{ section.content | safe }}
+    </section>
+  </main>
+</div>
+
+<style>
+  /* Desktop layout remains the same */
+  .home-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .home-sidebar {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 4rem;
+  }
+
+  .profile-pic.static-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    margin-top: 4rem !important; /* Ensure the image itself has no top margin */
+    display: block;
+    transition: none !important;
+    transform: none !important;
+    pointer-events: none;
+  }
+
+  .home-intro {
+    flex: 1;
+    padding-top: 0; /* Remove container padding */
+    margin-top: 4rem;
+  }
+
+  /* This targets the first element inside your markdown content
+     (usually an h1, h2, or p) and removes the margin that
+     prevents it from being flush with the top of the image.
+  */
+  .home-intro section > *:first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* --- MOBILE FIX --- */
+  @media (max-width: 850px) {
+    .home-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .home-sidebar {
+      width: 100%;
+      margin-bottom: 0;
+      padding-bottom: 3rem;
+      padding-right: 0;
+    }
+
+    .profile-container {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      line-height: 0; /* Prevents ghost whitespace below the image */
+    }
+
+    .home-intro {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+</style>
+{% endblock content %}

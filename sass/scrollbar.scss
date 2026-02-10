@@ -1,0 +1,29 @@
+/* 1. Standardize for Firefox */
+html {
+    scrollbar-width: auto !important;
+    scrollbar-color: #888888 #f1f1f1 !important; /* thumb track */
+}
+
+/* 2. Standardize for Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 12px !important;  /* Standard thickness */
+    height: 12px !important; /* For horizontal scroll */
+    display: block !important;
+}
+
+/* The "Thumb" (the part you grab) */
+::-webkit-scrollbar-thumb {
+    background-color: #888888 !important; /* Standard gray */
+    border-radius: 10px !important;        /* Slightly rounded ends */
+    border: 3px solid #f1f1f1 !important;  /* Creates padding around thumb */
+}
+
+/* The "Track" (the path the thumb slides on) */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1 !important; /* Light gray background */
+}
+
+/* Hover effect for the thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555555 !important; /* Darker gray on hover */
+}

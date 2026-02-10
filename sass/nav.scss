@@ -1,0 +1,215 @@
+// Hamburger Menu Styles
+@use "hamburger";
+
+// #site-nav {
+//   width: min(var(--container-width) + 1rem, 100% - 1.5rem);
+//   max-width: min(var(--container-width) + 1rem, 100% - 1.5rem);
+//   nav ul {
+//     display: flex;
+//   }
+//   #home {
+//     margin-inline-end: auto;
+//   }
+//   .divider {
+//     display: none;
+//   }
+// }
+
+#site-nav {
+    nav,
+    #search-container {
+        width: min(var(--container-width) + 15rem, 100% - 1rem);
+    }
+}
+
+#site-nav nav {
+    a,
+    button,
+    summary,
+    #home a,
+    a.active {
+        color: var(--fg-color);
+    }
+
+    a:hover,
+    button:hover,
+    summary:hover {
+        color: var(--fg-color);
+        background-color: var(--fg-muted-1);
+    }
+
+    .icon {
+        background-color: var(--fg-color);
+    }
+
+    a.active,
+    #home a.active,
+    #theme-switcher .active {
+        background-color: transparent;
+        box-shadow: none;
+        color: var(--fg-color);
+    }
+
+    a.active:hover,
+    #theme-switcher .active:hover,
+    #home a.active:hover {
+        background-color: var(--fg-muted-1);
+        box-shadow: var(--edge-highlight);
+        color: var(--fg-color);
+    }
+}
+
+#site-nav {
+    nav a,
+    summary {
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+
+    nav #home a {
+        font-weight: 200;
+        font-size: 1.4rem;
+        .icon {
+            display: none;
+        }
+    }
+}
+
+#site-nav {
+    @media only screen and (max-width: 480px) {
+        position: sticky;
+        inset-block-start: 0;
+        margin-top: 0; /* Ensure no gap at top */
+
+        #handle {
+            display: none; // Hides the Duckquill 'bar' hint to favor your icon
+        }
+    }
+}
+
+#search-results-container {
+    /* Center it relative to the nav bar */
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    margin-inline: auto;
+
+    /* Force the width to match the theme's content container */
+    width: min(var(--container-width) + 15rem, 100% - 1rem);
+    max-width: min(var(--container-width) + 15rem, 100% - 1rem);
+}
+
+#site-nav nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for expanded menu */
+    position: relative;
+
+    .nav-header {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        order: 0; /* Desktop: First */
+    }
+
+    /* Shared styles for both lists */
+
+    .nav-links,
+    .nav-icons {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        gap: 0.25rem; /* Add gap for spacing between icons/links */
+    }
+
+    .nav-links {
+        order: 1; /* Desktop: Middle */
+        margin-inline-start: auto; /* Push to right on desktop */
+    }
+
+    .nav-icons {
+        order: 2; /* Desktop: Last */
+    }
+}
+
+@media screen and (max-width: 45rem) {
+    #site-nav nav {
+        /*
+           Order on Mobile:
+           0: Header (Home)
+           1: Icons (Search, Theme)
+           2: Hamburger
+           3: Menu (Links - full width below)
+        */
+
+        .nav-header {
+            order: 0;
+            margin-inline-end: auto; /* Push everything else to the right */
+        }
+
+        .nav-icons {
+            order: 1;
+            display: flex; /* Always visible */
+            margin-inline-end: 0.5rem; /* Space before hamburger */
+        }
+
+        .hamburger {
+            display: block;
+            order: 2;
+        }
+
+        .nav-links {
+            display: block; /* Hidden by height/opacity, but needs to be layout-ready */
+            width: 100%;
+            flex-direction: column;
+            order: 3; /* Force to bottom */
+            /* Transition props */
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transform: translateY(-1rem);
+            transition: var(--transition);
+            /* Reset visual bubble styles */
+            background: transparent;
+            box-shadow: none;
+            border-radius: 0;
+            padding: 0;
+            margin: 0;
+            pointer-events: none;
+            visibility: hidden;
+            &.is-active {
+                /* Reveal */
+                max-height: 100vh;
+                opacity: 1;
+                transform: none;
+                pointer-events: auto;
+                visibility: visible;
+                /* Layout spacing */
+                padding-block-start: 1rem;
+                display: flex;
+                li {
+                    margin: 0.25rem 0;
+                    width: 100%;
+                    text-align: center;
+                }
+                .divider {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 45.01rem) {
+    #site-nav nav {
+        .hamburger {
+            display: none;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+    }
+}

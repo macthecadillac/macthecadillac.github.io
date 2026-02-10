@@ -1,0 +1,58 @@
+@use "reset";
+
+#site-nav nav .hamburger {
+    @include reset.reset;
+    cursor: pointer;
+    display: block; // Will be hidden on desktop via media query in nav.scss
+    height: 2.25rem;
+    position: relative;
+    width: 2.25rem;
+    border-radius: var(--rounded-corner);
+    color: var(--fg-color);
+    transition: var(--transition);
+
+    &:hover {
+        box-shadow: var(--edge-highlight);
+        background-color: var(--fg-muted-1);
+        color: var(--fg-color);
+    }
+
+    &:active {
+        transform: var(--active);
+    }
+
+    span {
+        background-color: currentColor;
+        display: block;
+        height: 2px;
+        left: calc(50% - 8px);
+        position: absolute;
+        width: 16px;
+        transition: none;
+
+        &:nth-child(1) {
+            top: calc(50% - 6px);
+        }
+        &:nth-child(2) {
+            top: calc(50% - 1px);
+        }
+        &:nth-child(3) {
+            top: calc(50% + 4px);
+        }
+    }
+
+    &.is-active span {
+        &:nth-child(1) {
+            transform: none !important;
+            opacity: 1 !important;
+        }
+        &:nth-child(2) {
+            transform: none !important;
+            opacity: 1 !important;
+        }
+        &:nth-child(3) {
+            transform: none !important;
+            opacity: 1 !important;
+        }
+    }
+}

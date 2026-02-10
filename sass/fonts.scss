@@ -1,0 +1,46 @@
+:root {
+    /* --font-system-ui: system-ui, sans-serif; */
+    --font-system-ui: sans-serif;
+}
+
+// HEADINGS
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-system-ui);
+    letter-spacing: 0em;
+}
+
+h2,
+h3 {
+    font-weight: 100;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: var(--font-size-xx-large);
+}
+
+h2 {
+    font-size: var(--font-size-x-large);
+}
+
+h3 {
+    font-size: var(--font-size-large);
+}
+
+h4 {
+    font-size: var(--font-size-medium);
+}
+
+h5 {
+    font-size: var(--font-size-small);
+}

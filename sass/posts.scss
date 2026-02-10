@@ -1,0 +1,27 @@
+// gradient in post headers
+:root {
+  --accent-gradient: none;
+}
+
+// fix post headers
+.title, 
+.hero-title,
+h1, h2, h3, h4, h5, h6 {
+    background: none !important;
+    background-image: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    color: var(--fg-color) !important;
+}
+
+header.post-header h1 {
+    background: none !important;
+    -webkit-text-fill-color: var(--fg-color) !important;
+    color: var(--fg-color) !important;
+}
+
+// Remove horizontal rule above footer
+hr {
+    display: none;
+}

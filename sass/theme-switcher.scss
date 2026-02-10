@@ -1,0 +1,33 @@
+/* Change the button icon based on the active theme */
+:root[data-theme="light"] #theme-switcher .icon {
+    -webkit-mask-image: var(--icon-theme-light) !important;
+    mask-image: var(--icon-theme-light) !important;
+}
+
+:root[data-theme="dark"] #theme-switcher .icon {
+    -webkit-mask-image: var(--icon-theme-dark) !important;
+    mask-image: var(--icon-theme-dark) !important;
+}
+
+:root[data-theme="system"] #theme-switcher .icon {
+    -webkit-mask-image: var(--icon-theme-system) !important;
+    mask-image: var(--icon-theme-system) !important;
+}
+
+/* Hide the dropdown list entirely */
+#theme-switcher {
+  ul {
+    display: none !important;
+  }
+  /* Make the summary (the main button) look clickable and consistent */
+  summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  summary::-webkit-details-marker {
+      display: none;
+  }
+}

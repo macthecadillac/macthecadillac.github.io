@@ -1,0 +1,20 @@
+:root {
+    // fluid design
+    --container-width: clamp(45rem, 70vw, 55rem);
+}
+
+/* Make post lists or grids wrap automatically */
+.post-list,
+.grid-layout {
+    display: grid !important;
+    /* This creates as many columns as fit, at least 300px wide each */
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(300px, 100%), 1fr)
+    ) !important;
+    gap: 1.5rem !important;
+}
+
+main {
+    margin-top: 0rem;
+}
