@@ -37,6 +37,10 @@ function toggleSearch() {
   searchBar.toggleAttribute("disabled");
   if (searchContainer.classList.contains("active")) {
     searchBar.focus();
+  } else {
+    searchBar.value = "";
+    searchResults.innerHTML = "";
+    searchResults.style.display = "none";
   }
 }
 
@@ -128,7 +132,7 @@ function initSearch() {
 		}, { passive: true });*/
 
   document.addEventListener("keydown", function (event) {
-    if (event.key === "/") {
+    if (event.key === "/" && document.activeElement !== searchBar) {
       event.preventDefault();
       toggleSearch();
     } else if (event.key === "Escape") {
