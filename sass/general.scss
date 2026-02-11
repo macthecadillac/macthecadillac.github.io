@@ -1,5 +1,4 @@
 :root {
-    --shadow-glass: 0 0 0.2rem 0.01rem rgb(0 0 0 / 0.2);
     --active: none;
     --blur: blur(0.75rem);
     --search-blur: blur(2rem);
@@ -10,6 +9,8 @@
     --bg-color: #242424;
     --glass-bg: rgba(36, 36, 36, 0.6);
     --search-bg: rgba(36, 36, 36, 0.8);
+    --shadow-glass: 0 0 0.2rem 0.01rem rgb(0 0 0 / 0.4);
+    --search-shadow-glass: 0 0 0.3rem 0.01rem rgb(0 0 0 / 0.6);
 }
 
 @media (prefers-color-scheme: light) {
@@ -17,6 +18,8 @@
         --bg-color: white;
         --glass-bg: rgba(255, 255, 255, 0.6);
         --search-bg: rgba(255, 255, 255, 0.8);
+        --shadow-glass: 0 0 0.2rem 0.01rem rgb(0 0 0 / 0.2);
+        --search-shadow-glass: 0 0 0.2rem 0.01rem rgb(0 0 0 / 0.3);
     }
 }
 
@@ -25,6 +28,8 @@
         --bg-color: #242424;
         --glass-bg: rgba(36, 36, 36, 0.6);
         --search-bg: rgba(36, 36, 36, 0.8);
+        --shadow-glass: 0 0 0.2rem 0.01rem rgb(0 0 0 / 0.4);
+        --search-shadow-glass: 0 0 0.3rem 0.01rem rgb(0 0 0 / 0.6);
     }
 }
 
@@ -32,6 +37,8 @@
     --bg-color: white;
     --glass-bg: rgba(255, 255, 255, 0.6);
     --search-bg: rgba(255, 255, 255, 0.8);
+    --shadow-glass: 0 0 0.2rem 0.01rem rgb(0 0 0 / 0.2);
+    --search-shadow-glass: 0 0 0.2rem 0.01rem rgb(0 0 0 / 0.3);
 }
 
 /* Disable zoom on hover for images */

@@ -24,6 +24,7 @@
     #search-results-container {
       background-color: var(--search-bg);
       backdrop-filter: var(--search-blur);
+      box-shadow: var(--search-shadow-glass);
 
       /* Center it relative to the nav bar */
       inset-inline-start: 0;
