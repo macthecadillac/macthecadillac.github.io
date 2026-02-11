@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div id="banner-container">
+    <img id="banner" class="bleed" src="banner.png" {% if config.markdown.lazy_async_image %}decoding="async" loading="lazy"{% endif %} />
+</div>
+
 <div class="home-wrapper">
   <div class="home-sidebar">
     <div class="profile-container">
@@ -16,6 +20,17 @@
 </div>
 
 <style>
+  .bleed {
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  #banner-container {
+      mask-image: linear-gradient(black, transparent);
+      mask-size: 100% 100%;
+      height: 20rem;
+  }
+
   /* Desktop layout remains the same */
   .home-wrapper {
     display: flex;
@@ -41,7 +56,7 @@
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 1rem;
-    margin-top: 4rem !important; /* Ensure the image itself has no top margin */
+    margin-top: 12rem !important; /* Ensure the image itself has no top margin */
     display: block;
     transition: none !important;
     transform: none !important;
@@ -51,7 +66,7 @@
   .home-intro {
     flex: 1;
     padding-top: 0; /* Remove container padding */
-    margin-top: 4rem;
+    margin-top: 12rem;
   }
 
   /* This targets the first element inside your markdown content
