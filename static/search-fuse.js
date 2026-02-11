@@ -62,7 +62,7 @@ function initSearch() {
   const searchResults = document.getElementById("search-results");
   const searchContainer = document.getElementById("search-container");
   const MAX_ITEMS = 10;
-  const MAX_RESULTS = 3;
+  const MAX_RESULTS = 1;
 
   let currentTerm = "";
 
