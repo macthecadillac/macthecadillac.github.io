@@ -62,7 +62,7 @@ function initSearch() {
   const searchResults = document.getElementById("search-results");
   const searchContainer = document.getElementById("search-container");
   const MAX_ITEMS = 10;
-  const MAX_RESULTS = 1;
+  const MAX_RESULTS = 3;
 
   let currentTerm = "";
 
@@ -95,20 +95,20 @@ function initSearch() {
         .sort((a, b) => {
           const aValue = value.substring(a[0], a[1] + 1);
           const bValue = value.substring(b[0], b[1] + 1);
-          if (aValue === searchVal && bValue !== searchVal) return -1;
-          if (bValue === searchVal && aValue !== searchVal) return 1;
+          if (aValue === searchVal) return -1;
+          if (bValue === searchVal) return 1;
 
           const aLower = aValue.toLowerCase();
           const bLower = bValue.toLowerCase();
           const searchLower = searchVal.toLowerCase();
-          if (aLower === searchLower && bLower !== searchLower) return -1;
-          if (bLower === searchLower && aLower !== searchLower) return 1;
+          if (aLower === searchLower) return -1;
+          if (bLower === searchLower) return 1;
 
           const aNoDash = aLower.replace(/-/g, "");
           const bNoDash = bLower.replace(/-/g, "");
           const searchNoDash = searchLower.replace(/-/g, "");
-          if (aNoDash === searchNoDash && bNoDash !== searchNoDash) return -1;
-          if (bNoDash === searchNoDash && aNoDash !== searchNoDash) return 1;
+          if (aNoDash === searchNoDash) return -1;
+          if (bNoDash === searchNoDash) return 1;
 
           return (
             Math.abs(a[1] - a[0] - searchVal.length) -
