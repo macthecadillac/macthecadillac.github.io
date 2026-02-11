@@ -20,6 +20,26 @@
     #search-container {
         width: min(var(--container-width) + 15rem, 100% - 1rem);
     }
+
+    #search-results-container {
+      background-color: var(--search-bg);
+      backdrop-filter: var(--search-blur);
+
+      /* Center it relative to the nav bar */
+      inset-inline-start: 0;
+      inset-inline-end: 0;
+      margin-inline: auto;
+
+      /* Force the width to match the theme's content container */
+      width: min(var(--container-width) + 15rem, 100% - 1rem);
+      max-width: min(var(--container-width) + 15rem, 100% - 1rem);
+    }
+
+    #search-results {
+      .item {
+        background-color: transparent;
+      }
+    }
 }
 
 #site-nav nav {
@@ -87,29 +107,6 @@
             display: none; // Hides the Duckquill 'bar' hint to favor your icon
         }
     }
-}
-
-#search-results-container {
-    /* Center it relative to the nav bar */
-    inset-inline-start: 0;
-    inset-inline-end: 0;
-    margin-inline: auto;
-
-    /* Force the width to match the theme's content container */
-    width: min(var(--container-width) + 15rem, 100% - 1rem);
-    max-width: min(var(--container-width) + 15rem, 100% - 1rem);
-}
-
-#site-nav {
-  #search-results-container {
-    background-color: var(--search-bg);
-  }
-
-  #search-results {
-    .item {
-      background-color: transparent;
-    }
-  }
 }
 
 #site-nav nav {

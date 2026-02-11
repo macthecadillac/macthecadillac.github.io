@@ -1,7 +1,8 @@
 :root {
     --shadow-glass: 0 0 0.2rem 0.01rem rgb(0 0 0 / 0.2);
     --active: none;
-    --blur: saturate(1.8) blur(2rem);
+    --blur: blur(0.75rem);
+    --search-blur: blur(2rem);
     /* --transition: 0s; */
 }
 
@@ -22,12 +23,14 @@
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
         --bg-color: #242424;
+        --glass-bg: rgba(36, 36, 36, 0.6);
         --search-bg: rgba(36, 36, 36, 0.8);
     }
 }
 
 [data-theme="light"] {
     --bg-color: white;
+    --glass-bg: rgba(255, 255, 255, 0.6);
     --search-bg: rgba(255, 255, 255, 0.8);
 }
 
