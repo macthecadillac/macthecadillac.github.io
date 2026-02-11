@@ -14,7 +14,8 @@ async function initIndex() {
     includeScore: false,
     includeMatches: true,
     ignoreLocation: true,
-    threshold: 0.15,
+    minMatchCharLength: 2,
+    threshold: 0.05,
     keys: [
       { name: "title", weight: 3 },
       { name: "description", weight: 2 },
@@ -89,14 +90,32 @@ function initSearch() {
     for (const match of result.matches) {
       if (match.key === "title") continue;
 
-      const indices = match.indices
-        .sort(
-          (a, b) =>
-            Math.abs(a[1] - a[0] - searchVal.length) -
-            Math.abs(b[1] - b[0] - searchVal.length),
-        )
-        .slice(0, MAX_RESULTS);
       const value = match.value;
+      const indices = match.indices
+        .sort((a, b) => {
+          const aValue = value.substring(a[0], a[1] + 1);
+          const bValue = value.substring(b[0], b[1] + 1);
+          if (aValue === searchVal && bValue !== searchVal) return -1;
+          if (bValue === searchVal && aValue !== searchVal) return 1;
+
+          const aLower = aValue.toLowerCase();
+          const bLower = bValue.toLowerCase();
+          const searchLower = searchVal.toLowerCase();
+          if (aLower === searchLower && bLower !== searchLower) return -1;
+          if (bLower === searchLower && aLower !== searchLower) return 1;
+
+          const aNoDash = aLower.replace(/-/g, "");
+          const bNoDash = bLower.replace(/-/g, "");
+          const searchNoDash = searchLower.replace(/-/g, "");
+          if (aNoDash === searchNoDash && bNoDash !== searchNoDash) return -1;
+          if (bNoDash === searchNoDash && aNoDash !== searchNoDash) return 1;
+
+          return (
+            Math.abs(a[1] - a[0] - searchVal.length) -
+            Math.abs(b[1] - b[0] - searchVal.length)
+          );
+        })
+        .slice(0, MAX_RESULTS);
 
       for (const ind of indices) {
         let start = Math.max(0, ind[0] - TEASER_SIZE);
@@ -114,11 +133,11 @@ function initSearch() {
 
         output +=
           "<span>" +
-          (start > 0 && value[start - 1] !== "\n" ? "…" : "") +
+          (start > 0 ? "…" : "") +
           value.substring(start, ind[0]) +
           `<strong>${value.substring(ind[0], ind[1] + 1)}</strong>` +
           value.substring(ind[1] + 1, end) +
-          (end < value.length && value[end] !== "\n" ? "…" : "") +
+          (end < value.length ? "…" : "") +
           "</span>";
       }
     }
