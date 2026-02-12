@@ -15,6 +15,6 @@ mid-latitudes. Beyond physical oceanography, I have a background in condensed
 matter theory and was a classically trained pianist prior to my scientific
 career.
 
-The background image is a visualization of SQG flow using <a class="external"
-href="https://dedalus-project.org">Dedalus</a> and <a class="external"
-href="https://https://matplotlib.org">matplotlib</a>.
+The background image is a visualization of SQG Kolmogorov flow using <a
+class="external" href="https://dedalus-project.org">Dedalus</a> and <a
+class="external" href="https://https://matplotlib.org">matplotlib</a>.
