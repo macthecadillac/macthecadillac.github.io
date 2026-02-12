@@ -4,22 +4,22 @@
 
 {% block content %}
 <div id="banner-container">
-    <img id="banner" class="bleed" src="banner.png" {% if config.markdown.lazy_async_image %}decoding="async" loading="lazy"{% endif %} />
+    <img id="banner" class="bleed" src="banner.png" alt="SQG Kolmogorov flow" {% if config.markdown.lazy_async_image %}decoding="async" loading="lazy"{% endif %} />
 </div>
 
-<div class="home-wrapper">
+<main class="home-wrapper">
   <div class="home-sidebar">
     <div class="profile-container">
-      <img src="{{ get_url(path="profile.webp") }}" alt="Profile" class="profile-pic static-img">
+      <img src="{{ get_url(path="profile.webp") }}" alt="Mac Lee, PhD" class="profile-pic static-img">
     </div>
   </div>
 
-  <main class="home-intro">
+  <div class="home-intro">
     <section class="intro-content">
       {{ section.content | safe }}
     </section>
-  </main>
-</div>
+  </div>
+</main>
 
 <style>
   .bleed {
