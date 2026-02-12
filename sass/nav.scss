@@ -244,6 +244,9 @@ body:not(:has(#banner-container)) #site-nav.dark-nav.scrolled nav {
             margin: 0;
             pointer-events: none;
             visibility: hidden;
+            position: absolute;
+            top: 100%;
+            left: 0;
             &.is-active {
                 /* Reveal */
                 max-height: 100vh;
@@ -251,6 +254,7 @@ body:not(:has(#banner-container)) #site-nav.dark-nav.scrolled nav {
                 transform: none;
                 pointer-events: auto;
                 visibility: visible;
+                position: static;
                 /* Layout spacing */
                 padding-block-start: 1rem;
                 display: flex;
