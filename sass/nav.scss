@@ -110,6 +110,16 @@
     }
 }
 
+// Override the theme's banner rule that pushes the nav down on mobile.
+// The theme sets margin-block-start: calc(50vw + 1rem) on #site-nav when a
+// banner is present at <=480px, which prevents the sticky positioning above
+// from working until the user scrolls past that margin.
+@media only screen and (max-width: 480px) {
+    body:has(#banner-container) #site-nav:not(#handle + #site-nav) {
+        margin-block-start: 0;
+    }
+}
+
 #site-nav nav {
     display: flex;
     justify-content: space-between;
