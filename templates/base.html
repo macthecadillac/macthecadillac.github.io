@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" {% if lang in rtl_languages %}dir="rtl"{% endif %} lang="{{ lang }}" {% include "partials/default_theme.html" %}>
 {% include "partials/head.html" %}
-<body>
+<body {% block body_attrs %}{% endblock body_attrs %}>
 {% block body %}
 	{%- if config.extra.nav.links %}
 		{% include "partials/nav.html" %}

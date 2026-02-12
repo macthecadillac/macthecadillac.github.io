@@ -1,19 +1,62 @@
 // Hamburger Menu Styles
 @use "hamburger";
 
-// #site-nav {
-//   width: min(var(--container-width) + 1rem, 100% - 1.5rem);
-//   max-width: min(var(--container-width) + 1rem, 100% - 1.5rem);
-//   nav ul {
-//     display: flex;
-//   }
-//   #home {
-//     margin-inline-end: auto;
-//   }
-//   .divider {
-//     display: none;
-//   }
-// }
+// Transparent navbar in dark mode on home page and pages without a banner
+[data-theme="dark"] body[data-page="home"] #site-nav,
+body:not(:has(#banner-container)) #site-nav {
+    &::before {
+        background: linear-gradient(var(--bg-color), transparent);
+        box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    &.scrolled::before {
+        background: var(--glass-bg);
+        box-shadow: var(--shadow-glass);
+        backdrop-filter: var(--blur);
+        -webkit-backdrop-filter: var(--blur);
+    }
+
+    &.scrolled nav {
+        text-shadow: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) body[data-page="home"] #site-nav {
+        &::before {
+            background: linear-gradient(var(--bg-color), transparent);
+            box-shadow: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        }
+
+        &.scrolled::before {
+            background: var(--glass-bg);
+            box-shadow: var(--shadow-glass);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+        }
+
+        &.scrolled nav {
+            text-shadow: none;
+        }
+    }
+}
+
+// Text shadow applied via JS only after confirming dark mode
+body[data-page="home"] #site-nav.dark-nav nav,
+body:not(:has(#banner-container)) #site-nav.dark-nav nav {
+    text-shadow:
+        0 0 0.5rem var(--bg-color),
+        0 0 1rem var(--bg-color);
+}
+
+body[data-page="home"] #site-nav.dark-nav.scrolled nav,
+body:not(:has(#banner-container)) #site-nav.dark-nav.scrolled nav {
+    text-shadow: none;
+}
 
 #site-nav {
     nav,
