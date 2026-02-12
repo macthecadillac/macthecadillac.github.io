@@ -1,12 +1,17 @@
 // gradient in post headers
 :root {
-  --accent-gradient: none;
+    --accent-gradient: none;
 }
 
 // fix post headers
-.title, 
+.title,
 .hero-title,
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     background: none !important;
     background-image: none !important;
     -webkit-background-clip: initial !important;

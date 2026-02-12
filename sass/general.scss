@@ -69,3 +69,7 @@ img:not(
 video:hover {
     transform: none;
 }
+
+#site-footer > p {
+    font-family: "Lato", var(--font-system-ui);
+}

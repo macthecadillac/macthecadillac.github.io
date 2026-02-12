@@ -3,16 +3,16 @@
 @use "open-sans.scss";
 
 :root {
-    --font-nav-bar: "Inter Tight", var(--font-system-ui);
+    --font-nav-bar: "Lato", var(--font-system-ui);
     --font-headings: "Lato", var(--font-system-ui);
     --font-size-xx-small: 0.5rem;
     --font-size-x-small: 0.625rem;
     --font-size-small: 0.75rem;
     --font-size-medium: 0.9375rem;
     --font-size-large: 1rem;
-    --font-size-x-large: 1.25rem;
-    --font-size-xx-large: 1.6rem;
-    --font-size-xxx-large: 2.15rem;
+    --font-size-x-large: 1.2rem;
+    --font-size-xx-large: 1.5rem;
+    --font-size-xxx-large: 1.8rem;
 }
 
 body {
@@ -22,20 +22,37 @@ body {
 }
 
 // HEADINGS
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-headings);
     letter-spacing: 0em;
+    text-transform: uppercase;
 }
 
-h1, h2, h3 {
-    font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
 }
 
-h4, h5, h6 {
+#heading h1,
+#article-list article h3,
+h4 {
+    text-transform: none;
     font-weight: 800;
 }
 
 .katex {
-  font: normal 1.05em KaTeX_Main, Times New Roman, serif !important;
-  line-height: 1 !important;
+    font:
+        normal 1.05em KaTeX_Main,
+        Times New Roman,
+        serif !important;
+    line-height: 1 !important;
 }

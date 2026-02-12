@@ -138,7 +138,7 @@ csp = [
 # Uncomment this to disable the card displayed in share previews
 # card = false
 
-styles = ["mods.css"]
+styles = ["mods.css", "icon-overrides.css"]
 
 [extra.nav]
 # Whether to automatically hide nav when not hovered or focused

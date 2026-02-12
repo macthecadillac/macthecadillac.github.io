@@ -82,16 +82,15 @@
 
 #site-nav {
     nav a,
+    nav #home a,
     summary {
-        font-weight: 350;
+        font-weight: 300;
         font-family: var(--font-nav-bar);
-        font-size: 1.15rem;
+        text-transform: uppercase;
+        font-size: 1.2rem;
     }
 
     nav #home a {
-        font-weight: 350;
-        font-family: var(--font-nav-bar);
-        font-size: 1.25rem;
         .icon {
             display: none;
         }
