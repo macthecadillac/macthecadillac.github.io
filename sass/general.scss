@@ -70,6 +70,10 @@ video:hover {
     transform: none;
 }
 
+li::marker {
+    color: var(--fg-color);
+}
+
 #site-footer > p {
     font-family: "Lato", var(--font-system-ui);
 }
