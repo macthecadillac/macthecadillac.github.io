@@ -5,11 +5,12 @@
 :root {
     --font-nav-bar: "Lato", var(--font-system-ui);
     --font-headings: "Lato", var(--font-system-ui);
-    --font-size-xx-small: 0.5rem;
-    --font-size-x-small: 0.625rem;
-    --font-size-small: 0.75rem;
-    --font-size-medium: 0.9375rem;
-    --font-size-large: 1rem;
+    // --font-size-xx-small: 0.5rem;
+    --font-size-xx-small: 0.625rem;
+    --font-size-x-small: 0.75rem;
+    --font-size-small: 0.875;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.1rem;
     --font-size-x-large: 1.2rem;
     --font-size-xx-large: 1.5rem;
     --font-size-xxx-large: 1.8rem;
@@ -19,6 +20,7 @@ body {
     font-family: "Open Sans", var(--font-system-ui), var(--font-emoji);
     font-size: var(--font-size-medium);
     font-weight: 375;
+    letter-spacing: 0.005em;
 }
 
 // HEADINGS

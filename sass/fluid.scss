@@ -18,3 +18,16 @@
 main {
     margin-top: 0rem;
 }
+
+@media screen and (max-width: 45rem) {
+  :root {
+    --font-size-xx-small: 0.46875rem !important;
+    --font-size-x-small: 0.5859375 !important;
+    --font-size-small: 0.703125rem !important;
+    --font-size-medium: 0.9375rem !important;
+    --font-size-large: 1.03125rem !important;
+    --font-size-x-large: 1.125rem !important;
+    --font-size-xx-large: 1.40625rem !important;
+    --font-size-xxx-large: 1.6875rem !important;
+  }
+}

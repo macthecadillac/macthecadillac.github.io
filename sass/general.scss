@@ -65,6 +65,20 @@ img:not(
     }
 }
 
+// Change button font size
+.buttons {
+  a,
+  button {
+    font-size: var(--font-size-x-small);
+  }
+}
+
+.tags {
+  a {
+    font-size: var(--font-size-x-small);
+  }
+}
+
 /* Ensure videos do not zoom on hover */
 video:hover {
     transform: none;
@@ -76,4 +90,5 @@ li::marker {
 
 #site-footer > p {
     font-family: "Lato", var(--font-system-ui);
+    font-size: var(--font-size-small);
 }
