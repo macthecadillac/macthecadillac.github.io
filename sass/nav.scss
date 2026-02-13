@@ -79,6 +79,10 @@ body:not(:has(#banner-container)) #site-nav.dark-nav.scrolled nav {
         max-width: min(var(--container-width) + 15rem, 100% - 1rem);
     }
 
+    #search-bar {
+        font-family: var(--font-body);
+    }
+
     #search-results {
         .item {
             background-color: transparent;

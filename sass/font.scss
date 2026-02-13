@@ -5,6 +5,7 @@
 :root {
     --font-nav-bar: "Lato", var(--font-system-ui);
     --font-headings: "Lato", var(--font-system-ui);
+    --font-body: "Open Sans", var(--font-system-ui), var(--font-emoji);
     // --font-size-xx-small: 0.5rem;
     --font-size-xx-small: 0.625rem;
     --font-size-x-small: 0.75rem;
@@ -17,16 +18,16 @@
 }
 
 @media screen and (max-width: 45rem) {
-  :root {
-    --font-size-medium: 0.9375rem !important;
-  }
-  body {
-    letter-spacing: 0;
-  }
+    :root {
+        --font-size-medium: 0.9375rem !important;
+    }
+    body {
+        letter-spacing: 0;
+    }
 }
 
 body {
-    font-family: "Open Sans", var(--font-system-ui), var(--font-emoji);
+    font-family: var(--font-body);
     font-size: var(--font-size-medium);
     font-weight: 375;
     letter-spacing: 0.01em;
