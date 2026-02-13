@@ -140,21 +140,21 @@
     %} {%- if page.extra.scripts %} {%- set scripts = scripts |
     concat(with=page.extra.scripts) %} {%- elif section.extra.scripts %} {%- set
     scripts = scripts | concat(with=section.extra.scripts) %} {%- endif %} {%-
-    if scripts | length > 0 %} {%- for script in scripts %}
+    if scripts | length > 0 %} {%- for script in scripts %} {% if script ==
+    "count.js" %}
     <script
         type="text/javascript"
         defer
-        {%
-        if
-        script=""
-        ="count.js"
-        %}data-goatcounter="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count"
-        {%
-        endif
-        %}
+        data-goatcounter="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count"
         src="{{ get_url(path=script) | safe }}"
     ></script>
-    {%- endfor %} {%- endif %}
+    {% else %}
+    <script
+        type="text/javascript"
+        defer
+        src="{{ get_url(path=script) | safe }}"
+    ></script>
+    {% endif %} {%- endfor %} {%- endif %}
 
     <meta property="og:site_name" content="{{ config.title }}" />
     <meta property="og:title" content="{% include 'partials/title.html' %}" />
