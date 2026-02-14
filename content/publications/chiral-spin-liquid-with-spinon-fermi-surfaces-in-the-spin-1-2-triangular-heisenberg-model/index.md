@@ -8,9 +8,6 @@ tags = ["spin liquid"]
 katex = true
 +++
 
-<!-- [extra] -->
-<!-- banner = "banner.webp" -->
-
 We study the interplay of competing interactions in spin-$\frac{1}{2}$
 triangular Heisenberg model through tuning the first-($J_1$), second-($J_2$),
 and third-neighbor ($J_3$) couplings. Based on a large-scale density-matrix
@@ -35,3 +32,7 @@ Recommended citation: S.-S. Gong, W. Zheng, M. Lee, Y.-M. Lu, and D. N. Sheng,
 "Chiral spin liquid with spinon Fermi surfaces in the spin-$\frac{1}{2}$
 triangular Heisenberg model", [Phys. Rev. B 100, 241111
 (2019)](https://doi.org/10.1103/PhysRevB.100.241111).
+
+<div class="buttons">
+  <a href="./PhysRevB.100.241111.bibtex">Download BibTeX file</a>
+</div>

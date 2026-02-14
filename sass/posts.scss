@@ -30,3 +30,8 @@ header.post-header h1 {
 hr {
     display: none;
 }
+
+// Add space between content and previous/next buttons
+#post-nav {
+    margin-block-start: 1.5rem;
+}

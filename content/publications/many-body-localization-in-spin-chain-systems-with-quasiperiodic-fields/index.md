@@ -8,9 +8,6 @@ tags = ["localization", "spin", "decoherence"]
 katex = true
 +++
 
-<!-- [extra] -->
-<!-- banner = "banner.webp" -->
-
 We study the many-body localization of spin chain systems with quasiperiodic
 fields. We identify the lower bound for the critical disorder necessary to drive
 the transition between the thermal and many-body localized phase to be $W_{cl}
@@ -25,3 +22,7 @@ and our study finds that such fields are very efficient at driving the MBL phase
 transition.
 
 Recommended citation: M. Lee, T. R. Look, S. P. Lim, and D. N. Sheng, "Many-body localization in spin chain systems with quasiperiodic fields", [Phys. Rev. B 96, 075146 (2017)](https://doi.org/10.1103/PhysRevB.96.075146).
+
+<div class="buttons">
+  <a href="./PhysRevB.96.075146.bibtex">Download BibTeX file</a>
+</div>

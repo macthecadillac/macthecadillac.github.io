@@ -27,3 +27,7 @@ of ageostrophic effects. Surface trajectories can manifest local horizontal
 divergence even though the underlying fluid equations are incompressible.
 
 Recommended citation: M. Lee and S. G. Llewellyn Smith, "SQG point vortex dynamics with order Rossby corrections", [Eur. J. Mech. B Fluids 118, 204467 (2026)](https://doi.org/10.1016/j.euromechflu.2026.204467).
+
+<div class="buttons">
+  <a href="S0997754626000142.bib">Download BibTeX file</a>
+</div>

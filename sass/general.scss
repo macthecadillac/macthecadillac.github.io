@@ -101,3 +101,8 @@ li::marker {
     font-family: "Lato", var(--font-system-ui);
     font-size: var(--font-size-small);
 }
+
+// Reduce excessive top margin on buttons
+.buttons {
+    margin-block-start: 1.5rem;
+}
