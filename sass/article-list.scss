@@ -1,9 +1,46 @@
 #article-list {
-  article {
-    --bg-overlay: --bg-color;
-    h3 {
-      font-weight: 700;
-      font-family: var(--font-headings);
+    article {
+        --bg-overlay: --bg-color;
+        h3 {
+            font-weight: 700;
+            font-family: var(--font-headings);
+        }
     }
-  }
+}
+
+#paginator {
+    #paginator-first,
+    #paginator-previous,
+    #paginator-next,
+    #paginator-last {
+        background-color: transparent;
+        box-shadow: none;
+        color: var(--fg-muted-4);
+    }
+
+    a#paginator-first,
+    a#paginator-previous,
+    a#paginator-next,
+    a#paginator-last {
+        &:hover {
+            background-color: var(--fg-muted-1);
+            color: var(--fg-muted-5);
+        }
+    }
+
+    span#paginator-first,
+    span#paginator-previous,
+    span#paginator-next,
+    span#paginator-last {
+        color: var(--fg-muted-3);
+        opacity: 1;
+    }
+
+    #paginator-counter {
+        background-color: transparent;
+        box-shadow: none;
+        font-weight: 600;
+        font-family: var(--font-headings);
+        color: var(--fg-muted-5);
+    }
 }
