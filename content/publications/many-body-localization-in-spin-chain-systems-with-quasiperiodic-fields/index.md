@@ -4,6 +4,8 @@ description = 'M. Lee, T. R. Look, S. P. Lim, and D. N. Sheng, "Many-body locali
 date = 2017-08-23
 [taxonomies]
 tags = ["localization", "spin", "decoherence"]
+[extra]
+katex = true
 +++
 
 <!-- [extra] -->

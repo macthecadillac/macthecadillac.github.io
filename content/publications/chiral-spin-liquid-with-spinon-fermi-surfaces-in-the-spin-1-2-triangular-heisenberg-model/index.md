@@ -4,6 +4,8 @@ description = 'S.-S. Gong, W. Zheng, M. Lee, Y.-M. Lu, and D. N. Sheng, "Chiral 
 date = 2019-12-16
 [taxonomies]
 tags = ["spin liquid"]
+[extra]
+katex = true
 +++
 
 <!-- [extra] -->

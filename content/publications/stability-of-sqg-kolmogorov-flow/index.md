@@ -6,6 +6,7 @@ date = 2026-01-26
 tags = ["stability", "SQG", "submesoscale"]
 [extra]
 banner = "banner.webp"
+katex = true
 +++
 
 <!-- [extra] -->

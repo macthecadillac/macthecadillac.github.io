@@ -100,7 +100,7 @@ show_backlinks = true
 # Whether to enable the KaTeX library for rendering LaTeX.
 # Note: This will make your page significantly heavier.
 # Instead, consider enabling it per page/section.
-katex = true
+katex = false
 #
 # Whether to render table of contents on all pages.
 # Will not be rendered if page doesn't have any headings.
