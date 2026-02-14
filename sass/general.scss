@@ -67,16 +67,16 @@ img:not(
 
 // Change button font size
 .buttons {
-  a,
-  button {
-    font-size: var(--font-size-x-small);
-  }
+    a,
+    button {
+        font-size: var(--font-size-x-small);
+    }
 }
 
 .tags {
-  a {
-    font-size: var(--font-size-x-small);
-  }
+    a {
+        font-size: var(--font-size-x-small);
+    }
 }
 
 /* Ensure videos do not zoom on hover */
@@ -86,6 +86,15 @@ video:hover {
 
 li::marker {
     color: var(--fg-color);
+}
+
+/* Cap article banner height at 20rem */
+#banner-container {
+    max-height: 20rem;
+
+    & + #heading {
+        margin-block-start: min(calc(50vw - 7rem), 13rem);
+    }
 }
 
 #site-footer > p {
