@@ -88,9 +88,13 @@ li::marker {
     color: var(--fg-color);
 }
 
-/* Cap article banner height at 20rem */
+/* Cap article banner height at 20rem.
+   Use height + overflow:hidden instead of max-height, because WebKit resolves
+   aspect-ratio against max-height and shrinks the width to match. */
 #banner-container {
-    max-height: 20rem;
+    aspect-ratio: unset;
+    height: min(20rem, 50vw);
+    overflow: hidden;
 
     & + #heading {
         margin-block-start: min(calc(50vw - 7rem), 13rem);
