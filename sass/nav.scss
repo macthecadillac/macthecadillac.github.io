@@ -61,7 +61,7 @@ body:not(:has(#banner-container)) #site-nav.dark-nav.scrolled nav {
 #site-nav {
     nav,
     #search-container {
-        width: min(var(--container-width) + 15rem, 100% - 1rem);
+        width: min(var(--container-width) + 15rem, 100%);
     }
 
     #search-results-container {
@@ -137,6 +137,11 @@ body:not(:has(#banner-container)) #site-nav.dark-nav.scrolled nav {
         font-size: 1.2rem;
     }
 
+    nav .circle .icon {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
     nav #home a {
         .icon {
             display: none;
@@ -204,24 +209,6 @@ body:not(:has(#banner-container)) #site-nav.dark-nav.scrolled nav {
 }
 
 @media screen and (max-width: 45rem) {
-    #site-nav {
-        nav,
-        #search-container {
-            width: min(var(--container-width) + 15rem, 100%);
-        }
-
-        nav a,
-        nav #home a,
-        summary {
-            font-size: 1.35rem;
-        }
-
-        nav .circle .icon {
-            width: var(--font-size-xx-large);
-            height: var(--font-size-xx-large);
-        }
-    }
-
     #site-nav nav {
         /*
            Order on Mobile:
