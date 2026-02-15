@@ -207,7 +207,7 @@ body:not(:has(#banner-container)) #site-nav.dark-nav.scrolled nav {
     #site-nav {
         nav,
         #search-container {
-            width: min(var(--container-width) + 15rem, 100% - 0.25rem);
+            width: min(var(--container-width) + 15rem, 100%);
         }
 
         nav a,
