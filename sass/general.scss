@@ -110,3 +110,11 @@ li::marker {
 .buttons {
     margin-block-start: 1.5rem;
 }
+
+// Keep go-to-top button fixed on small viewports instead of static
+// (theme switches to static at <=720px, which pushes the title down)
+#buttons-container {
+    @media only screen and (max-width: 720px) {
+        position: fixed;
+    }
+}
