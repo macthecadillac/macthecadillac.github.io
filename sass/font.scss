@@ -6,29 +6,19 @@
     --font-nav-bar: "Lato", var(--font-system-ui);
     --font-headings: "Lato", var(--font-system-ui);
     --font-body: "Open Sans", var(--font-system-ui), var(--font-emoji);
+    // Fluid font sizes: 13.5% uniform reduction from 55rem down to 45rem (hamburger breakpoint)
     // --font-size-xx-small: 0.5rem;
-    --font-size-xx-small: 0.625rem;
-    --font-size-x-small: 0.75rem;
-    --font-size-small: 0.875rem;
-    --font-size-medium: 0.95rem;
-    --font-size-large: 1.1rem;
-    --font-size-x-large: 1.2rem;
-    --font-size-xx-large: 1.5rem;
-    --font-size-xxx-large: 1.8rem;
+    --font-size-xx-small: clamp(0.5625rem, calc(0.2812rem + 0.625vw), 0.625rem);
+    --font-size-x-small: clamp(0.675rem, calc(0.3375rem + 0.75vw), 0.75rem);
+    --font-size-small: clamp(0.7875rem, calc(0.3937rem + 0.875vw), 0.875rem);
+    --font-size-medium: clamp(0.855rem, calc(0.4275rem + 0.95vw), 0.95rem);
+    --font-size-large: clamp(0.99rem, calc(0.495rem + 1.1vw), 1.1rem);
+    --font-size-x-large: clamp(1.08rem, calc(0.54rem + 1.2vw), 1.2rem);
+    --font-size-xx-large: clamp(1.35rem, calc(0.675rem + 1.5vw), 1.5rem);
+    --font-size-xxx-large: clamp(1.62rem, calc(0.81rem + 1.8vw), 1.8rem);
 }
 
-// 13.5% uniform reduction at hamburger menu breakpoint
 @media screen and (max-width: 45rem) {
-    :root {
-        --font-size-xx-small: 0.5625rem;
-        --font-size-x-small: 0.675rem;
-        --font-size-small: 0.7875rem;
-        --font-size-medium: 0.855rem;
-        --font-size-large: 0.99rem;
-        --font-size-x-large: 1.08rem;
-        --font-size-xx-large: 1.35rem;
-        --font-size-xxx-large: 1.62rem;
-    }
     body {
         letter-spacing: 0;
     }

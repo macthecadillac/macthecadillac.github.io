@@ -134,7 +134,7 @@ body:not(:has(#banner-container)) #site-nav.dark-nav.scrolled nav {
         font-weight: 300;
         font-family: var(--font-nav-bar);
         text-transform: uppercase;
-        font-size: var(--font-size-x-large);
+        font-size: 1.2rem;
     }
 
     nav #home a {
@@ -213,7 +213,7 @@ body:not(:has(#banner-container)) #site-nav.dark-nav.scrolled nav {
         nav a,
         nav #home a,
         summary {
-            font-size: var(--font-size-xx-large);
+            font-size: 1.35rem;
         }
 
         nav .circle .icon {
