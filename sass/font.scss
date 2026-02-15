@@ -9,7 +9,7 @@
     // --font-size-xx-small: 0.5rem;
     --font-size-xx-small: 0.625rem;
     --font-size-x-small: 0.75rem;
-    --font-size-small: 0.875;
+    --font-size-small: 0.875rem;
     --font-size-medium: 0.95rem;
     --font-size-large: 1.1rem;
     --font-size-x-large: 1.2rem;
@@ -17,9 +17,17 @@
     --font-size-xxx-large: 1.8rem;
 }
 
+// 13.5% uniform reduction at hamburger menu breakpoint
 @media screen and (max-width: 45rem) {
     :root {
-        --font-size-medium: 0.9375rem !important;
+        --font-size-xx-small: 0.5625rem;
+        --font-size-x-small: 0.675rem;
+        --font-size-small: 0.7875rem;
+        --font-size-medium: 0.855rem;
+        --font-size-large: 0.99rem;
+        --font-size-x-large: 1.08rem;
+        --font-size-xx-large: 1.35rem;
+        --font-size-xxx-large: 1.62rem;
     }
     body {
         letter-spacing: 0;
