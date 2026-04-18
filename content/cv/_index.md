@@ -57,7 +57,10 @@ M. Lee, T. R. Look, S. P. Lim, and D. N. Sheng, "Many-body localization in spin 
 
 ## Talks and Presentations
 
-"SQG point vortex dynamics with order Rossby corrections", Workshop on Numerical
+"SQG Point Vortex Dynamics with Order Rossby Corrections", SoCal Fluids XIX,
+University of California, Riverside, CA, Apr. 2026.
+
+"SQG Point Vortex Dynamics with Order Rossby Corrections", Workshop on Numerical
 and Theoretical Advances in Geophysical Fluid Dynamics and nonlinear PDE
 Systems, Texas A\&M University, College Station, TX, Feb. 2026.
 
