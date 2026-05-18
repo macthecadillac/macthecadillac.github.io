@@ -35,4 +35,4 @@ damping is sufficiently large, ageostrophic effects have a small but measurable
 stabilising effect.
 
 
-Recommended citation: M. Lee and S. G. Llewellyn Smith, Stability of SQG Kolmogorov Flow, [https://arxiv.org/abs/2511.10904](https://arxiv.org/abs/2511.10904), Nov. 2025, submitted.
+Recommended citation: M. Lee and S. G. Llewellyn Smith, Stability of SQG Kolmogorov Flow, [https://arxiv.org/abs/2511.10904](https://arxiv.org/abs/2511.10904), May 2026, accepted.

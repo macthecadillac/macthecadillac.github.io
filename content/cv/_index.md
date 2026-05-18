@@ -45,9 +45,9 @@ instructor for the Hathaway-Sycamores Summer SAT Workshop, which was organized
 in partnership with three local high schools from 2014 to 2016. I reprised this
 role as an SAT instructor in 2017 and 2018 as a volunteer.
 
-## Publications
+## Peer-Reviewed Publications
 
-M. Lee and S. G. Llewellyn Smith, "Stability of SQG Kolmogorov Flow", [https://arxiv.org/abs/2511.10904](https://arxiv.org/abs/2511.10904), Nov. 2025, submitted.
+M. Lee and S. G. Llewellyn Smith, "Stability of SQG Kolmogorov Flow", [https://arxiv.org/abs/2511.10904](https://arxiv.org/abs/2511.10904), May 2026, accepted.
 
 M. Lee and S. G. Llewellyn Smith, "SQG point vortex dynamics with order Rossby corrections", [Eur. J. Mech. B Fluids 118, 204467 (2026)](https://doi.org/10.1016/j.euromechflu.2026.204467).
 
