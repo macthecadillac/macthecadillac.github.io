@@ -47,7 +47,7 @@ role as an SAT instructor in 2017 and 2018 as a volunteer.
 
 ## Peer-Reviewed Publications
 
-M. Lee and S. G. Llewellyn Smith, "Stability of SQG Kolmogorov Flow", [https://arxiv.org/abs/2511.10904](https://arxiv.org/abs/2511.10904), May 2026, accepted.
+M. Lee and S. G. Llewellyn Smith, "Stability of SQG Kolmogorov Flow", [https://doi.org/10.1016/j.dynatmoce.2026.101680](https://doi.org/10.1016/j.dynatmoce.2026.101680), accepted.
 
 M. Lee and S. G. Llewellyn Smith, "SQG point vortex dynamics with order Rossby corrections", [Eur. J. Mech. B Fluids 118, 204467 (2026)](https://doi.org/10.1016/j.euromechflu.2026.204467).
 
