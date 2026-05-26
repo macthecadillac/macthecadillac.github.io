@@ -1,7 +1,7 @@
 +++
 title = "Stability of SQG Kolmogorov Flow"
 description = 'M. Lee and S. G. Llewellyn Smith, "Stability of SQG Kolmogorov Flow", [Dyn. Atmos. Oceans, 101680 (2026)](https://doi.org/10.1016/j.dynatmoce.2026.101680), accepted.'
-date = 2026-01-26
+date = 2026-05-25
 [taxonomies]
 tags = ["stability", "SQG", "submesoscale"]
 [extra]
