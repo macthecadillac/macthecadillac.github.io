@@ -13,7 +13,9 @@ interest in fluid dynamics in the context of planetary science. My PhD work
 involved analytical and numerical studies of submesoscale dynamics in the
 mid-latitudes. Beyond physical oceanography, I have a background in condensed
 matter theory and was a classically trained pianist prior to my scientific
-career.
+career. I am also proficient in several programming languages. In particular, my
+Rust package [atree](https://github.com/macthecadillac/atree) has been
+downloaded over 9 million times as of this writing.
 
 The background image is a visualization of SQG Kolmogorov flow using <a
 class="external" href="https://dedalus-project.org">Dedalus</a> and <a
