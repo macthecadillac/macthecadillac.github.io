@@ -47,9 +47,9 @@ role as an SAT instructor in 2017 and 2018 as a volunteer.
 
 ## Peer-Reviewed Publications
 
-M. Lee and S. G. Llewellyn Smith, "Stability of SQG Kolmogorov Flow", [Dyn. Atmos. Oceans, 101680 (2026)](https://doi.org/10.1016/j.dynatmoce.2026.101680), accepted.
-
 M. Lee and S. G. Llewellyn Smith, "SQG point vortex dynamics with order Rossby corrections", [Eur. J. Mech. B Fluids 118, 204467 (2026)](https://doi.org/10.1016/j.euromechflu.2026.204467).
+
+M. Lee and S. G. Llewellyn Smith, "Stability of SQG Kolmogorov Flow", [Dyn. Atmos. Oceans, 101680 (2026)](https://doi.org/10.1016/j.dynatmoce.2026.101680).
 
 S.-S. Gong, W. Zheng, M. Lee, Y.-M. Lu, and D. N. Sheng, "Chiral spin liquid with spinon Fermi surfaces in the spin-$\frac{1}{2}$ triangular Heisenberg model", [Phys. Rev. B 100, 241111 (2019)](https://doi.org/10.1103/PhysRevB.100.241111).
 
