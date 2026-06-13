@@ -23,4 +23,4 @@ June 2026.
 
 The background image is a visualization of SQG Kolmogorov flow using <a
 class="external" href="https://dedalus-project.org">Dedalus</a> and <a
-class="external" href="https://https://matplotlib.org">matplotlib</a>.
+class="external" href="https://matplotlib.org">matplotlib</a>.
