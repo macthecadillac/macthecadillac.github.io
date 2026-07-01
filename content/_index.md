@@ -14,12 +14,11 @@ dynamics in the mid-latitudes. Beyond physical oceanography, I have a background
 in condensed matter theory and was a classically trained pianist prior to my
 scientific career.
 
-I am an active contributor of
-[FastVideo](https://github.com/hao-ai-lab/FastVideo), a unified inference and
-post-training framework that aims to accelerate video generation. My Rust
-package [atree](https://github.com/macthecadillac/atree) is used by
-[C2PA](https://c2pa.org/) and has been downloaded over 9.5 million times as of
-June 2026.
+I am a co-maintainer of [FastVideo](https://github.com/hao-ai-lab/FastVideo), a
+unified inference and post-training framework that aims to accelerate video
+generation. My Rust package [atree](https://github.com/macthecadillac/atree) is
+used by [C2PA](https://c2pa.org/) and has been downloaded over 9.5 million times
+as of June 2026.
 
 The background image is a visualization of SQG Kolmogorov flow using <a
 class="external" href="https://dedalus-project.org">Dedalus</a> and <a
