@@ -23,6 +23,17 @@ katex = true
 - Leslie and Terry Cutler Scholarship (2017)
 - Summer Research Grant (2016)
 
+## Experience
+
+#### [FastVideo](https://github.com/hao-ai-lab/FastVideo) (2026-present)
+
+- Co-maintainer since June 2026
+- Open-source inference and post-training framework for accelerated video generation; 3.5k+ GitHub stars,
+adopted/forked by SGLang for multimodal inference, integrated as a backend in NVIDIA Dynamo, and used by
+Tencent HY-WorldPlay.
+- Co-authored commits to add a native FLUX.2 text-to-image port into FastVideo
+- Ongoing work with integrating a reinforcement learning training and inference pipeline into FastVideo
+
 ## Teaching and Mentorship
 
 #### Lab Teaching Assistant Coordinator at UCSD (2022-2024)
@@ -79,7 +90,7 @@ Lattice", APS March Meeting, Los Angeles, CA, Mar. 2018.
 
 ## Contact
 
-- Email: [mal004@ucsd.edu](mailto:mal004@ucsd.edu)
+- Email: [mac@maclee.net](mailto:mac@maclee.net)
 
 <div class="buttons">
   <a class="external" href="https://raw.githubusercontent.com/macthecadillac/cv/master/cv.pdf">Download CV</a>
