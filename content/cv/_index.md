@@ -27,12 +27,16 @@ katex = true
 
 #### [FastVideo](https://github.com/hao-ai-lab/FastVideo) (2026-present)
 
-- Co-maintainer since June 2026
-- Open-source inference and post-training framework for accelerated video generation; 3.5k+ GitHub stars,
-adopted/forked by SGLang for multimodal inference, integrated as a backend in NVIDIA Dynamo, and used by
-Tencent HY-WorldPlay.
+*Open-source inference and post-training framework for accelerated
+video generation; 3.5k+ GitHub stars, adopted/forked by SGLang for multimodal
+inference, integrated as a backend in NVIDIA Dynamo, and used by Tencent
+HY-WorldPlay.*
+
+- Collaborator / Co-maintainer since June 2026
 - Co-authored commits to add a native FLUX.2 text-to-image port into FastVideo
-- Ongoing work with integrating a reinforcement learning training and inference pipeline into FastVideo
+- Ongoing work with a reinforcement learning training and inference pipeline, a
+  performance benchmark regression tracking redesign, and Trajectory
+  Distribution Matching, a distillation framework
 
 ## Teaching and Mentorship
 
