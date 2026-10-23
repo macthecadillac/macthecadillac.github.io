@@ -1,21 +1,23 @@
 @use "lato.scss";
 @use "inter-tight.scss";
-@use "open-sans.scss";
+// @use "open-sans.scss";
 
 :root {
     --font-nav-bar: "Lato", var(--font-system-ui);
     --font-headings: "Lato", var(--font-system-ui);
-    --font-body: "Open Sans", var(--font-system-ui), var(--font-emoji);
+    --font-body: "Lato", var(--font-system-ui), var(--font-emoji);
     // Fluid font sizes: scales down from 55rem to 45rem (hamburger breakpoint)
     // Reduction proportional to font size: 0% at xx-small, 10% at xxx-large
-    --font-size-xx-small: 0.625rem;
-    --font-size-x-small: clamp(0.742rem, calc(0.7061rem + 0.0798vw), 0.75rem);
-    --font-size-small: clamp(0.8564rem, calc(0.7726rem + 0.1862vw), 0.875rem);
-    --font-size-medium: clamp(0.9237rem, calc(0.8055rem + 0.2628vw), 0.95rem);
-    --font-size-large: clamp(1.0555rem, calc(0.8554rem + 0.4447vw), 1.1rem);
-    --font-size-x-large: clamp(1.1413rem, calc(0.877rem + 0.5872vw), 1.2rem);
-    --font-size-xx-large: clamp(1.3883rem, calc(0.8856rem + 1.117vw), 1.5rem);
-    --font-size-xxx-large: clamp(1.62rem, calc(0.81rem + 1.8vw), 1.8rem);
+    // Body text sizes are net 9.25% above the original scale (15% up, then 5% down)
+    // Headings keep their original sizes; see overrides below.
+    --font-size-xx-small: 0.6828rem;
+    --font-size-x-small: clamp(0.8106rem, calc(0.7714rem + 0.0872vw), 0.8194rem);
+    --font-size-small: clamp(0.9356rem, calc(0.8447rem + 0.2034vw), 0.9559rem);
+    --font-size-medium: clamp(1.0091rem, calc(0.88rem + 0.2871vw), 1.0379rem);
+    --font-size-large: clamp(1.1531rem, calc(0.9345rem + 0.4858vw), 1.2018rem);
+    --font-size-x-large: clamp(1.2469rem, calc(0.9581rem + 0.6415vw), 1.311rem);
+    --font-size-xx-large: clamp(1.5167rem, calc(0.9675rem + 1.2203vw), 1.6388rem);
+    --font-size-xxx-large: clamp(1.7699rem, calc(0.8849rem + 1.9665vw), 1.9665rem);
 }
 
 @media screen and (max-width: 45rem) {
@@ -57,6 +59,35 @@ h6 {
 h4 {
     text-transform: none;
     font-weight: 800;
+}
+
+// Keep titles and headings at their original sizes
+h1 {
+    font-size: clamp(1.62rem, calc(0.81rem + 1.8vw), 1.8rem);
+}
+
+h2 {
+    font-size: clamp(1.3883rem, calc(0.8856rem + 1.117vw), 1.5rem);
+}
+
+h3 {
+    font-size: clamp(1.1413rem, calc(0.877rem + 0.5872vw), 1.2rem);
+}
+
+h4 {
+    font-size: clamp(1.0555rem, calc(0.8554rem + 0.4447vw), 1.1rem);
+}
+
+h5 {
+    font-size: clamp(0.9237rem, calc(0.8055rem + 0.2628vw), 0.95rem);
+}
+
+h6 {
+    font-size: clamp(0.8564rem, calc(0.7726rem + 0.1862vw), 0.875rem);
+}
+
+strong.title {
+    font-size: clamp(1.1413rem, calc(0.877rem + 0.5872vw), 1.2rem);
 }
 
 .katex {
